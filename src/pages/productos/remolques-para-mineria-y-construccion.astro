@@ -1,0 +1,67 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import pesadas from '../../data/remolques-para-mineria-y-construccion.json';
+---
+<Layout>
+    <section class="bg-gray-50 py-12 px-6 md:px-12">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-8">
+                Remolques <br /> Para Carga Pesada
+            </h2>
+            <p class="text-gray-600 text-lg sm:text-xl md:text-1xl mb-10 max-w-4xl mx-auto">
+                Encuentra el remolque perfecto diseñado específicamente para cada sector y necesidad.
+            </p>
+            <div class="flex justify-center mb-10">
+              <a
+                href="/#categoria"
+                class="flex items-center gap-2 text-primary font-semibold text-lg hover:text-secondary transition-colors"
+              >
+                <i class="fa-solid fa-chevron-left text-3xl"></i>
+                Volver atrás
+              </a>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+                {pesadas.map((pesada) => (
+                  <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center overflow-hidden">
+                    {/* Imagen destacada */}
+                    <div class="w-full h-72 flex items-center justify-center bg-gray-100">
+                      <img
+                        src={pesada.image}
+                        alt={pesada.title}
+                        class="w-full h-full object-contain"
+                      />
+                    </div>
+              
+                    {/* Contenido */}
+                    <div class="p-6 text-center flex flex-col gap-4">
+                      {/* Título del producto */}
+                      <h3 class="text-2xl font-bold text-gray-800">
+                        {pesada.title}
+                      </h3>
+              
+                      {/* Descripción opcional */}
+                      <p class="text-gray-600 text-sm leading-relaxed">
+                        Encuentra la mejor solución para tus necesidades agrícolas.
+                      </p>
+              
+                      {/* Botón de acción */}
+                      <a
+                        href={`https://wa.me/1234567890?text=Hola%20Remolques%20ATO%20%26%20PE%C3%91A%2C%20Estoy%20interesado%20en%20adquirir%20"${encodeURIComponent(pesada.title)}"`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex items-center justify-center gap-2 bg-gradient-to-tr from-primary to-secondary text-white font-semibold text-lg py-3 px-6 rounded-lg shadow-lg transition-transform transform hover:scale-105"
+                        >
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        Consultar ahora
+                        </a>
+                    </div>
+                  </div>
+                ))}
+              </div>              
+        </div>
+    </section>
+    <a href="/#categoria" class="fixed bottom-5 left-5 bg-gradient-to-tr from-primary to-secondary text-white p-4 rounded-full shadow-lg flex items-center justify-center text-lg transition-all hover:scale-105 z-50">
+      <i class="fa-solid fa-chevron-left text-2xl mr-2"></i>
+      Volver atrás
+    </a>
+</Layout>
