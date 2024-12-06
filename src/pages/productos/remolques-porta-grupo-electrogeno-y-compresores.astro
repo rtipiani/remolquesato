@@ -21,43 +21,45 @@ import compresores from '../../data/remolques-porta-grupo-electrogeno-y-compreso
               </a>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-                {compresores.map((compresor) => (
-                  <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center overflow-hidden">
-                    {/* Imagen destacada */}
-                    <div class="w-full h-72 flex items-center justify-center bg-gray-100">
-                      <img
-                        src={compresor.image}
-                        alt={compresor.title}
-                        class="w-full h-full object-contain"
-                      />
-                    </div>
-              
-                    {/* Contenido */}
-                    <div class="p-6 text-center flex flex-col gap-4">
-                      {/* Título del producto */}
-                      <h3 class="text-2xl font-bold text-gray-800">
-                        {compresor.title}
-                      </h3>
-              
-                      {/* Descripción opcional */}
-                      <p class="text-gray-600 text-sm leading-relaxed">
-                        Encuentra la mejor solución para tus necesidades agrícolas.
-                      </p>
-              
-                      {/* Botón de acción */}
-                      <a
-                        href={`https://wa.me/1234567890?text=Hola%20Remolques%20ATO%20%26%20PE%C3%91A%2C%20Estoy%20interesado%20en%20adquirir%20"${encodeURIComponent(compresor.title)}"`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="flex items-center justify-center gap-2 bg-green-500 text-white font-semibold text-lg py-3 px-6 rounded-lg shadow-lg hover:bg-green-600 transition-transform transform hover:scale-105 active:scale-95"
-                        >
-                        <i class="fa-brands fa-whatsapp text-xl"></i>
-                        Consultar ahora
-                        </a>
-                    </div>
+              {compresores.map((compresor) => (
+                <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col items-center overflow-hidden">
+                  {/* Imagen destacada */}
+                  <div class="w-full h-80 flex items-center justify-center bg-gray-100 relative group">
+                    <img
+                      src={compresor.image}
+                      alt={compresor.title}
+                      class="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
+                    />
+                    {/* Overlay al hacer hover */}
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300"></div>
                   </div>
-                ))}
-              </div>              
+            
+                  {/* Contenido */}
+                  <div class="p-6 text-center flex flex-col gap-4">
+                    {/* Título del producto */}
+                    <h3 class="text-2xl font-bold text-gray-800">
+                      {compresor.title}
+                    </h3>
+            
+                    {/* Descripción opcional */}
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                      Encuentra la mejor solución para tus necesidades agrícolas.
+                    </p>
+            
+                    {/* Botón de acción */}
+                    <a
+                      href={`https://wa.me/+51995374449?text=Hola%20Remolques%20ATO%20%26%20PE%C3%91A%2C%20Estoy%20interesado%20en%20adquirir%20"${encodeURIComponent(compresor.title)}"`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="flex items-center justify-center gap-2 bg-gradient-to-tr from-green-500 to-green-600 text-white font-semibold text-lg py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 active:scale-95"
+                    >
+                      <i class="fa-brands fa-whatsapp text-xl"></i>
+                      Consultar ahora
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>            
         </div>
     </section>
     <a href="/#categoria" class="fixed bottom-5 left-5 bg-gradient-to-tr from-primary to-secondary text-white p-4 rounded-full shadow-lg flex items-center justify-center text-lg transition-all hover:scale-105 z-50">
