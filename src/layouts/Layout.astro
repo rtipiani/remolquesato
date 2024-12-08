@@ -1,35 +1,52 @@
 ---
 import '../styles/global.css';
+import Footer from '../components/Footer.astro';
 ---
 <!doctype html>
 <html lang="es">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
 		<title>Remolques Ato & Peña</title>
 		<meta name="description" content="Remolques Ato & Peña ofrece una amplia variedad de remolques y equipos de alta calidad para diversas industrias. ¡Consulta ahora por nuestros productos y servicios!" />
-		<meta name="keywords" content="remolques, equipos agrícolas, maquinaria, Ato & Peña, soluciones en remolques para diversas industrias" />
+		<meta name="keywords" content="remolques y equipos sectores agrícola, minería, construcción y telefonía. Ato & Peña, soluciones en remolques para diversas industrias" />
 		<meta name="robots" content="index, follow" />
 		<meta property="og:title" content="Remolques Ato & Peña" />
 		<meta property="og:description" content="Remolques Ato & Peña ofrece productos y servicios especializados en remolques de alta calidad." />
-		<meta property="og:image" content="https://remolquesato.com/URL_DE_LA_IMAGEN" />
+		<meta property="og:image" content="https://remolquesato.com/images/aboutUs.png" />
 		<meta property="og:url" content="https://remolquesato.com" />
 		<meta property="og:type" content="website" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:title" content="Remolques Ato & Peña" />
 		<meta name="twitter:description" content="Remolques Ato & Peña ofrece productos y servicios especializados en remolques de alta calidad." />
-		<meta name="twitter:image" content="https://remolquesato.com/URL_DE_LA_IMAGEN" />
+		<meta name="twitter:image" content="https://remolquesato.com/images/aboutUs.png" />
 		<link rel="canonical" href="https://remolquesato.com" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 		<link rel="manifest" href="/site.webmanifest">
+		<script type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "LocalBusiness",
+			  "name": "Remolques Ato & Peña",
+			  "address": {
+				"@type": "PostalAddress",
+				"streetAddress": "Jr. Vizcardo y Guzman 448",
+				"addressLocality": "San Martín de Porres",
+				"addressCountry": "PE"
+			  },
+			  "telephone": "+51 995 374 449",
+			  "email": "ventas@estructurametalicaato.com",
+			  "url": "https://remolquesato.com"
+			}
+		</script>			
 	</head>
 	<body>
 		<slot />
 		<a href="https://wa.me/+51995374449?text=Hola%20Remolques%20ATO%20%26%20PE%C3%91A,%20estoy%20interesado%20en%20más%20información%20sobre%20tus%20productos%20y%20servicios." target="_blank" class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center gap-2 text-lg md:text-xl transition-all hover:scale-105 z-50">
       		<i class="fa-brands fa-whatsapp text-xl md:text-2xl"></i>
     	</a>
+		<Footer />
 	</body>
 </html>
