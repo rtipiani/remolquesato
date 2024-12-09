@@ -27,7 +27,7 @@ const slides = [
     <div id="slider" class="flex transition-transform duration-700 ease-in-out h-full">
         {slides.map((slide, index) => (
             <div class="relative flex-shrink-0 w-full h-full">
-                <img src={slide.src} alt={slide.alt} class="w-full h-full object-cover" loading={index === 0 ? "eager" : "lazy"}/>
+                <img src={slide.src} alt={slide.alt} class="w-full h-full object-cover" loading={index === 0 ? "eager" : "lazy"} width="1200" height="650"/>
 
                 <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center px-4 md:px-8 lg:px-12 text-white">
                     <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-2">
