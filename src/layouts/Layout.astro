@@ -35,17 +35,19 @@ const { meta } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta property="og:locale" content="es_ES" />
 		<meta name="viewport" content="width=device-width" />
-		<title>{meta?.title || "Remolques Ato & Peña"}</title>
-		<meta name="description" content={meta?.description || "Remolques Ato & Peña ofrece una amplia variedad de remolques y equipos de alta calidad para diversas industrias. ¡Consulta ahora por nuestros productos y servicios!"}/>
+		<meta name="robots" content="index, follow">
+		<title>{meta?.title || "Remolques Ato & Peña | alta calidad y garantía"}</title>
+		<meta name="description" content={meta?.description || "Ofrecemos una amplia variedad de remolques y equipos de alta calidad para diversas industrias. ¡Consulta ahora por nuestros productos y servicios!"}/>
+		<meta property="og:site_name" content="Remolques Ato & Peña">
 		<meta property="og:title" content={meta?.title || "Remolques Ato & Peña"} />
-		<meta property="og:description" content={meta?.description || "Remolques Ato & Peña ofrece productos y servicios especializados en remolques de alta calidad."} />
+		<meta property="og:description" content={meta?.description || "Ofrecemos productos y servicios especializados en remolques de alta calidad."} />
 		<meta property="og:image" content={meta?.image || "https://remolquesato.com/images/slide1.png"} />
 		<meta property="og:url" content={meta?.url || "https://remolquesato.com"} />
 		<meta property="og:type" content="website" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta name="twitter:title" content={meta?.title || "Remolques Ato & Peña"} />
-		<meta name="twitter:description" content={meta?.description || "Remolques Ato & Peña ofrece productos y servicios especializados en remolques de alta calidad."} />
-		<meta name="twitter:image" content={meta?.image || "https://remolquesato.com/images/slide1.png"} />
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:title" content={meta?.title || "Remolques Ato & Peña"} />
+		<meta property="twitter:description" content={meta?.description || "Ofrecemos productos y servicios especializados en remolques de alta calidad."} />
+		<meta property="twitter:image" content={meta?.image || "https://remolquesato.com/images/slide1.png"} />
 		<link rel="canonical" href={meta?.url || "https://remolquesato.com"} />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
