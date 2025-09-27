@@ -18,12 +18,14 @@
 }
 
 .menu-link.active {
-    color: #7dc35a; /* Color para resaltar el enlace activo */
+    color: #7dc35a;
     font-weight: bold;
+    font-display: swap;
 }
 
 .floating {
     animation: float 2s ease-in-out infinite;
+    font-display: swap;
 }
 
 @keyframes float {
