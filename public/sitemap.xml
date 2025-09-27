@@ -1,74 +1,77 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
-    <loc>https://www.remolquesato.com/</loc>
-    <lastmod>2024-12-13T07:17:39-05:00</lastmod>
-    <priority>1.00</priority>
+  <loc>https://www.remolquesato.com/</loc>
+  <lastmod>2025-09-27T08:45:26+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
-    <loc>https://www.remolquesato.com/productos/remolques-para-sector-agricola</loc>
-    <lastmod>2024-12-17T13:44:34-05:00</lastmod>
-    <priority>0.80</priority>
+  <loc>https://www.remolquesato.com/productos/remolques-para-sector-agricola</loc>
+  <lastmod>2025-09-27T08:45:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.remolquesato.com/productos/remolques-para-mineria-y-construccion</loc>
-    <lastmod>2024-12-17T13:44:35-05:00</lastmod>
-    <priority>0.80</priority>
+  <loc>https://www.remolquesato.com/productos/remolques-para-mineria-y-construccion</loc>
+  <lastmod>2025-09-27T08:45:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.remolquesato.com/productos/remolques-de-1-eje</loc>
-    <lastmod>2024-12-17T13:44:35-05:00</lastmod>
-    <priority>0.80</priority>
+  <loc>https://www.remolquesato.com/productos/remolques-para-tanque-ibc</loc>
+  <lastmod>2025-09-27T08:45:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.remolquesato.com/productos/remolques-de-2-ejes</loc>
-    <lastmod>2024-12-17T13:44:36-05:00</lastmod>
-    <priority>0.80</priority>
+  <loc>https://www.remolquesato.com/productos/remolques-de-1-eje</loc>
+  <lastmod>2025-09-27T08:45:27+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.remolquesato.com/productos/remolques-para-bote</loc>
-    <lastmod>2024-12-17T13:44:36-05:00</lastmod>
-    <priority>0.80</priority>
+  <loc>https://www.remolquesato.com/productos/remolques-de-2-ejes</loc>
+  <lastmod>2025-09-27T08:45:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.remolquesato.com/productos/remolques-para-paneles-solares</loc>
-    <lastmod>2024-12-17T13:44:36-05:00</lastmod>
-    <priority>0.80</priority>
+  <loc>https://www.remolquesato.com/productos/remolques-para-bote</loc>
+  <lastmod>2025-09-27T08:45:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.remolquesato.com/productos/remolques-porta-bobina</loc>
-    <lastmod>2024-12-17T13:44:37-05:00</lastmod>
-    <priority>0.80</priority>
+  <loc>https://www.remolquesato.com/productos/remolques-porta-bobina</loc>
+  <lastmod>2025-09-27T08:45:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.remolquesato.com/productos/remolques-porta-escalera</loc>
-    <lastmod>2024-12-17T13:44:37-05:00</lastmod>
-    <priority>0.80</priority>
+  <loc>https://www.remolquesato.com/productos/remolques-porta-escalera</loc>
+  <lastmod>2025-09-27T08:45:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.remolquesato.com/productos/remolques-para-cuatrimoto</loc>
-    <lastmod>2024-12-17T13:44:38-05:00</lastmod>
-    <priority>0.80</priority>
+  <loc>https://www.remolquesato.com/productos/remolques-para-cuatrimoto</loc>
+  <lastmod>2025-09-27T08:45:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.remolquesato.com/productos/remolques-para-moto</loc>
-    <lastmod>2024-12-17T13:44:37-05:00</lastmod>
-    <priority>0.80</priority>
+  <loc>https://www.remolquesato.com/productos/remolques-para-moto</loc>
+  <lastmod>2025-09-27T08:45:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.remolquesato.com/productos/remolques-para-caballo-y-ganaderia</loc>
-    <lastmod>2024-12-17T13:44:37-05:00</lastmod>
-    <priority>0.80</priority>
+  <loc>https://www.remolquesato.com/productos/remolques-para-caballo-y-ganaderia</loc>
+  <lastmod>2025-09-27T08:45:28+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
-    <loc>https://www.remolquesato.com/productos/remolques-porta-grupo-electrogeno-y-compresores</loc>
-    <lastmod>2024-12-17T13:44:37-05:00</lastmod>
-    <priority>0.80</priority>
+  <loc>https://www.remolquesato.com/productos/remolques-porta-grupo-electrogeno-y-compresores</loc>
+  <lastmod>2025-09-27T08:45:29+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
-<!-- Nuevo enlace añadido -->
-<url>
-    <loc>https://www.remolquesato.com/contacto</loc>
-    <lastmod>2024-12-28T10:00:00-05:00</lastmod>
-    <priority>0.90</priority>
-</url>
+
+
 </urlset>
