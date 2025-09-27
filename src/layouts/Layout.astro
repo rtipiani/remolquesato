@@ -41,15 +41,15 @@ const { meta } = Astro.props;
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-CC5NLSBJSE" />
 		<script is:inline>
 			if (typeof window !== 'undefined') {
-				// Configuración de Google Analytics
+				// Cargar Google Analytics
 				window.dataLayer = window.dataLayer || [];
 				function gtag() {
 				window.dataLayer.push(arguments);
 				}
 				gtag('js', new Date());
-				gtag('config', 'G-CC5NLSBJSE');
+				gtag('config', 'G-CC5NLSBJSE'); // ID de Google Analytics
 
-				// Configuración de Google Tag Manager
+				// Cargar Google Tag Manager
 				(function(w, d, s, l, i) {
 				w[l] = w[l] || [];
 				w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -64,6 +64,7 @@ const { meta } = Astro.props;
 				})(window, document, 'script', 'dataLayer', 'GTM-N6XXD9VT');
 			}
 		</script>
+
 		<script type="application/ld+json">
 			{
 				"@context": "https://schema.org",
@@ -71,7 +72,7 @@ const { meta } = Astro.props;
 				"name": "Remolques Ato & Peña",
 				"address": {
 					"@type": "PostalAddress",
-					"streetAddress": "Jr. Vizcardo y Guzman 448",
+					"streetAddress": "Av. Los Olivos, Mz. F, lote 26, San Martín de Porres.",
 					"addressLocality": "San Martín de Porres",
 					"addressCountry": "PE"
 				},
@@ -79,9 +80,16 @@ const { meta } = Astro.props;
 				"telephone": "+51 995 374 449",
 				"email": "ventas@estructurametalicaato.com",
 				"openingHours": "Mo-Sa 08:00-19:00",
-				"image": "https://remolquesato.com/images/aboutUs.avif"
+				"image": "https://remolquesato.com/images/aboutUs.avif",
+				"sameAs": [
+					"https://www.facebook.com/estructurametalicaato",
+					"https://www.instagram.com/remolquesato/",
+					"https://www.tiktok.com/@Remolquesato",
+					"https://www.youtube.com/@remolquesato",
+					"https://www.linkedin.com/company/remolques-ato-pe%C3%B1a/"
+				]
 			}
-		</script>			
+		</script>
 	</head>
 	<body>
 		<noscript>
@@ -89,23 +97,6 @@ const { meta } = Astro.props;
 			height="0" width="0" style="display:none;visibility:hidden"></iframe>
 		</noscript>
 		<slot />
-		<style>
-			.floating {
-				animation: float 2s ease-in-out infinite;
-			}
-
-			@keyframes float {
-				0% {
-				transform: translateY(0);
-				}
-				50% {
-				transform: translateY(-10px);
-				}
-				100% {
-				transform: translateY(0);
-				}
-			}
-		</style>
 
 		<a href="https://wa.me/+51995374449?text=Hola%20Remolques%20ATO%20%26%20PE%C3%91A,%20estoy%20interesado%20en%20más%20información%20sobre%20tus%20productos%20y%20servicios." 
 		target="_blank" rel="noopener noreferrer" aria-label="Ir a Whatsapp de Remolques Ato & Peña" class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center gap-2 text-lg md:text-xl floating z-50">

@@ -21,7 +21,7 @@ import botes from '../../data/remolques-para-bote.json';
               	{botes.map((bote) => (
                 	<div class="rounded-lg border border-[#7dc35a] shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col"> 
 						<div class="w-full flex items-center justify-center overflow-hidden">
-							<img src={bote.image} alt={bote.title} class="w-full h-full object-contain rounded-t-lg"/>
+							<img src={bote.image} alt={bote.title} loading="lazy" class="w-full h-full object-contain rounded-t-lg"/>
 						</div>
 					
 						<div class="p-6 text-center">

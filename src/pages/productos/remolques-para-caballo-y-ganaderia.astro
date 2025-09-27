@@ -21,7 +21,7 @@ import ganaderias from '../../data/remolques-para-caballo-y-ganaderia.json';
 				{ganaderias.map((ganaderia) => (
 					<div class="rounded-lg border border-[#7dc35a] shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col">
 						<div class="w-full flex items-center justify-center overflow-hidden">
-							<img src={ganaderia.image} alt={ganaderia.title} class="w-full h-full object-contain rounded-t-lg" />
+							<img src={ganaderia.image} alt={ganaderia.title} loading="lazy" class="w-full h-full object-contain rounded-t-lg" />
 						</div>
 				
 						<div class="p-6 text-center">
