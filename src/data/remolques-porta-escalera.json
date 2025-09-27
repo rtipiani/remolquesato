@@ -1,22 +1,17 @@
 [
     {
-        "title": "Remolques porta Escalera",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/porta-escalera0.webp"
+        "title": "Remolque porta Escalera modelo extensión",
+        "description": "Facilita el transporte de escaleras con remolques diseñados para garantizar seguridad y eficiencia.",
+        "image": "/images/productos/porta-escalera/porta_escalera.png"
     },
     {
-        "title": "Remolques porta Escalera",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/porta-escalera1.webp"
+        "title": "Remolque porta Escalera modelo extensión",
+        "description": "Facilita el transporte de escaleras con remolques diseñados para garantizar seguridad y eficiencia.",
+        "image": "/images/productos/porta-escalera/porta_escalera1.png"
     },
     {
-        "title": "Remolques porta Escalera",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/porta-escalera2.webp"
-    },
-    {
-        "title": "Remolques porta Escalera",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/porta-escalera3.webp"
+        "title": "Remolque porta Escalera modelo fijo",
+        "description": "Facilita el transporte de escaleras con remolques diseñados para garantizar seguridad y eficiencia.",
+        "image": "/images/productos/porta-escalera/porta_escalera2.png"
     }
 ]

@@ -2,16 +2,16 @@
 const slides = [
     {
         src: 'images/slide1.webp',
-        alt: 'Remolques Ideales para el Sector Agrícola',
-        title: 'Ideales para el Sector Agrícola',
+        alt: 'Remolques para Sector Agrícola',
+        title: 'para maquinaria del Sector Agrícola',
         description: 'Transporta maquinaria agrícola como tractores, sembradoras y cosechadoras con nuestros remolques.',
         whatsappLink: 'https://wa.me/+51995374449?text=Hola%20Remolques%20ATO%20%26%20PE%C3%91A,%20me%20interesan%20los%20remolques%20para%20el%20sector%20agr%C3%ADcola.%20%C2%BFPueden%20darme%20m%C3%A1s%20informaci%C3%B3n%3F'
     },
     {
         src: 'images/slide2.webp',
-        alt: 'Remolques para Construcción y Minería',
-        title: 'Ideales para Construcción y Minería',
-        description: 'Nuestros remolques son ideales para mover retroexcavadoras, minicargadores y otros equipos pesados.',
+        alt: 'Remolques para Sector Minero',
+        title: 'para maquinaria de Minería y Construcción',
+        description: 'Nuestros remolques son ideales para mover retroexcavadoras, minicargadores y maquinaria pesada.',
         whatsappLink: 'https://wa.me/+51995374449?text=Hola%20Remolques%20ATO%20%26%20PE%C3%91A,%20me%20interesan%20los%20remolques%20para%20construcci%C3%B3n%20y%20miner%C3%ADa.%20%C2%BFPodr%C3%ADan%20ayudarme%20con%20más%20informaci%C3%B3n%3F'
     },
     {
@@ -29,17 +29,17 @@ const slides = [
             <div class="relative flex-shrink-0 w-full h-full">
                 <img src={slide.src} alt={slide.alt} class="w-full h-full object-cover" loading={index === 0 ? "eager" : "lazy"} width="1200" height="650"/>
 
-                <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-center px-4 md:px-8 lg:px-12 text-white">
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-2">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center px-4 md:px-8 lg:px-12 text-white">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
                         Remolques
                     </h2>
-                    <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-tight max-w-[90%] lg:max-w-[75%] mb-4">
+                    <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium max-w-[90%] lg:max-w-[75%] mb-4">
                         {slide.title}
                     </p>
-                    <p class="text-sm sm:text-base md:text-lg leading-relaxed mb-6 max-w-[90%] md:max-w-[65%]">
+                    <p class="text-sm sm:text-base md:text-lg mb-6 max-w-[90%] md:max-w-[65%]">
                         {slide.description}
                     </p>
-                    <a href={slide.whatsappLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gradient-to-br from-primary to-secondary text-white px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-base font-medium shadow-md hover:shadow-lg hover:scale-105 transition">
+                    <a href={slide.whatsappLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-[#7dc35a] text-black px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-base font-medium shadow-md hover:shadow-lg hover:scale-105 transition">
                         Consultar ahora
                         <i class="fa-brands fa-whatsapp text-lg ml-1"></i>
                     </a>
@@ -48,17 +48,18 @@ const slides = [
         ))}
     </div>
 
-    <button id="prevBtn" class="absolute top-1/2 left-4 -translate-y-1/2 bg-gradient-to-tr from-primary to-secondary p-2 sm:p-4 rounded-full opacity-65 hover:opacity-100 hover:scale-105 transition transform" aria-label="Anterior">
-        <i class="fas fa-chevron-left"></i>
+    <button id="prevBtn" class="absolute top-1/2 left-4 -translate-y-1/2 w-8 h-8 sm:w-16 sm:h-16 flex items-center justify-center rounded-full hover:opacity-100 hover:scale-105 transition transform" aria-label="Anterior">
+        <i class="fas fa-chevron-left text-[#7dc35a] fa-2x"></i>
     </button>
-    <button id="nextBtn" class="absolute top-1/2 right-4 -translate-y-1/2 bg-gradient-to-tr from-primary to-secondary p-2 sm:p-4 rounded-full opacity-65 hover:opacity-100 hover:scale-105 transition transform" aria-label="Siguiente">
-        <i class="fas fa-chevron-right"></i>
+
+    <button id="nextBtn" class="absolute top-1/2 right-4 -translate-y-1/2 w-8 h-8 sm:w-16 sm:h-16 flex items-center justify-center rounded-full hover:opacity-100 hover:scale-105 transition transform" aria-label="Siguiente">
+        <i class="fas fa-chevron-right text-[#7dc35a] fa-2x"></i>
     </button>
 
     <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
         {slides.map((_, i) => (
             <button
-                class={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-200 ${i === 0 ? "bg-gradient-to-br from-primary to-secondary" : "bg-white opacity-75"}`}
+                class={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-200 ${i === 0 ? "bg-[#7dc35a]" : "bg-white opacity-75"}`}
                 data-index={i}
                 aria-label={`Ir a la diapositiva ${i + 1}`}
             ></button>
@@ -94,11 +95,11 @@ const slides = [
 
             indicators.forEach((dot, index) => {
                 if (index === currentSlide) {
-                    dot.classList.add("bg-gradient-to-br", "from-primary", "to-secondary");
+                    dot.classList.add("bg-[#7dc35a]");
                     dot.classList.remove("bg-white", "opacity-75");
                 } else {
                     dot.classList.add("bg-white", "opacity-75");
-                    dot.classList.remove("bg-gradient-to-br", "from-primary", "to-secondary");
+                    dot.classList.remove("bg-[#7dc35a]");
                 }
             });
         };

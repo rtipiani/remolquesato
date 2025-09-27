@@ -1,62 +1,47 @@
 [
     {
-        "title": "Remolques para sector agrícola",
+        "title": "Remolque para sector agrícola",
         "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/agricola0.webp"
+        "image": "/images/productos/sector-agricola/sector-agricola.png"
     },
     {
-        "title": "Remolques para sector agrícola",
+        "title": "Remolque para sector agrícola",
         "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/agricola1.webp"
+        "image": "/images/productos/sector-agricola/sector-agricola1.png"
     },
     {
-        "title": "Remolques para sector agrícola",
+        "title": "Remolque para sector agrícola",
         "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/agricola2.webp"
+        "image": "/images/productos/sector-agricola/sector-agricola2.png"
     },
     {
-        "title": "Remolques para sector agrícola",
+        "title": "Remolque para sector agrícola",
         "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/agricola3.webp"
+        "image": "/images/productos/sector-agricola/sector-agricola3.png"
     },
     {
-        "title": "Remolques para sector agrícola",
+        "title": "Remolque para sector agrícola",
         "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/agricola4.webp"
+        "image": "/images/productos/sector-agricola/sector-agricola4.png"
     },
     {
-        "title": "Remolques para sector agrícola",
+        "title": "Remolque para sector agrícola",
         "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/agricola5.webp"
+        "image": "/images/productos/sector-agricola/sector-agricola5.png"
     },
     {
-        "title": "Remolques para sector agrícola",
+        "title": "Remolque para sector agrícola",
         "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/agricola6.webp"
+        "image": "/images/productos/sector-agricola/sector-agricola6.png"
     },
     {
-        "title": "Remolques para sector agrícola",
+        "title": "Remolque para sector agrícola",
         "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/agricola7.webp"
+        "image": "/images/productos/sector-agricola/sector-agricola7.png"
     },
     {
-        "title": "Remolques para sector agrícola",
+        "title": "Remolque para sector agrícola",
         "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/agricola8.webp"
-    },
-    {
-        "title": "Remolques para sector agrícola",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/agricola9.webp"
-    },
-    {
-        "title": "Remolques para sector agrícola",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/agricola10.webp"
-    },
-    {
-        "title": "Remolques para sector agrícola",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/agricola11.webp"
+        "image": "/images/productos/sector-agricola/sector-agricola8.png"
     }
 ]

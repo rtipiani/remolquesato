@@ -1,32 +1,27 @@
 ---
 import categories from "../data/categories.json";
 ---
-<section id="categoria" class="bg-gray-50 py-12 px-6 md:px-12">
+<section id="categoria" class="bg-gray-50 py-12 px-6 md:px-12 pt-24">
     <div class="container mx-auto text-center">
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-5">
-            Nuestras 
-            <br />
-            Categorías de Remolques
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-5">
+            Nuestros Remolques
         </h2>
-        <p class="text-gray-600 text-lg sm:text-xl md:text-1xl mb-10 max-w-4xl mx-auto">
-            Encuentra el remolque perfecto para cada necesidad.
-            <br />
-            Creamos remolques únicos, diseñados específicamente para los sectores agrícola, minero, de telecomunicaciones e industrial. Nuestros diseños personalizados garantizan que cada detalle se adapte perfectamente a tus requerimientos.
+        <p class="text-gray-600 text-md lg:text-xl mb-10 max-w-4xl mx-auto">
+            Encuentra el remolque perfecto para cada necesidad. <br /> Fabricamos remolques a medida para los sectores agrícola, minero, de telecomunicaciones e industrial, utilizando materiales de alta calidad para asegurar durabilidad y rendimiento óptimo en cada aplicación.
         </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {categories.map((category) => (
-                <div class="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col overflow-hidden">
-                    <div class="w-full h-80 bg-white flex items-center justify-center relative group">
-                        <img src={category.image} alt={category.title} class="w-80 h-80 object-cover rounded-t-lg transition-transform duration-300 group-hover:scale-110" />
-                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center">
-                            <h3 class="text-white text-lg font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300"> 
-                                {category.title}
-                            </h3>
-                        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            {categories.map(category => (
+                <div class="bg-white rounded-lg border border-[#7dc35a] shadow-lg hover:shadow-2xl transition-shadow duration-300 flex flex-col overflow-hidden">
+                    <div class="w-full h-64 sm:h-80 md:h-72 bg-white flex items-center justify-center relative overflow-hidden rounded-lg">
+                        <img 
+                            src={category.image} 
+                            alt={category.title} 
+                            class="w-full h-full object-cover rounded-t-lg shadow-lg transition-all duration-500" 
+                        />
                     </div>
                     <div class="p-6 flex flex-col gap-4">
-                        <h3 class="text-2xl font-bold text-gray-800 text-center">
-                            <a href={category.link} class="text-gray-800 hover:text-primary transition-colors">
+                        <h3 class="text-md md:text-xl font-bold text-black text-center">
+                            <a href={category.link} class="text-black hover:text-[#3f3f3f] transition-colors">
                                 {category.title}
                             </a>
                         </h3>
@@ -35,7 +30,7 @@ import categories from "../data/categories.json";
                         </p>
                     </div>
                     <div class="mt-auto p-4">
-                        <a href={category.link} class="block text-center bg-gradient-to-br from-primary to-secondary text-white font-semibold py-2 px-4 rounded-lg shadow hover:translate-y-[-2px] transition-transform duration-300">
+                        <a href={category.link} class="block text-center bg-black text-white font-semibold py-2 px-4 rounded-lg shadow hover:translate-y-[-2px] transition-transform duration-300">
                             <i class="fas fa-arrow-circle-right"></i>
                             Ver más
                         </a>

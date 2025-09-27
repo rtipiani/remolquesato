@@ -1,1 +1,6 @@
 @import '@fortawesome/fontawesome-free/css/all.css';
+
+.menu-link.active {
+    color: #7dc35a; /* Color para resaltar el enlace activo */
+    font-weight: bold;
+}

@@ -1,57 +1,72 @@
 [
     {
-        "title": "Remolques para minería y construcción",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/maquinaria-pesada0.webp"
+        "title": "Remolque para retroexcavadora",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria.png"
     },
     {
-        "title": "Remolques para minería y construcción",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/maquinaria-pesada1.webp"
+        "title": "Remolque para retroexcavadora",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria1.png"
     },
     {
-        "title": "Remolques para minería y construcción",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/maquinaria-pesada2.webp"
+        "title": "Remolque para montacarga",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria2.png"
     },
     {
-        "title": "Remolques para minería y construcción",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/maquinaria-pesada3.webp"
+        "title": "Remolque para autonivelador",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria3.png"
     },
     {
-        "title": "Remolques para minería y construcción",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/maquinaria-pesada4.webp"
+        "title": "Remolque para autonivelador",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria4.png"
     },
     {
-        "title": "Remolques para minería y construcción",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/maquinaria-pesada5.webp"
+        "title": "Remolque con tornamesa",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria5.png"
     },
     {
-        "title": "Remolques para minería y construcción",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/maquinaria-pesada6.webp"
+        "title": "Remolque con tornamesa",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria6.png"
     },
     {
-        "title": "Remolques para minería y construcción",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/maquinaria-pesada7.webp"
+        "title": "Remolque para minicargador",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria7.png"
     },
     {
-        "title": "Remolques para minería y construcción",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/maquinaria-pesada8.webp"
+        "title": "Remolque para minicargador",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria13.png"
     },
     {
-        "title": "Remolques para minería y construcción",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/maquinaria-pesada9.webp"
+        "title": "Remolque para minicargador",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria8.png"
     },
     {
-        "title": "Remolques para minería y construcción",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/maquinaria-pesada10.webp"
+        "title": "Remolque para rodillo",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria9.png"
+    },
+    {
+        "title": "Remolque para rodillo",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria10.png"
+    },
+    {
+        "title": "Remolque para elevador tijera",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria11.png"
+    },
+    {
+        "title": "Remolque para elevador tijera",
+        "description": "Diseñados para superar los retos de la minería y construcción.",
+        "image": "/images/productos/construccion-y-mineria/construccion-y-mineria12.png"
     }
 ]

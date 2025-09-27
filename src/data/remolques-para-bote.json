@@ -1,27 +1,17 @@
 [
     {
-        "title": "Remolques para botes",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/bote0.webp"
+        "title": "Remolque para botes",
+        "description": "Transporta botes de forma segura y sencilla con remolques diseñados para adaptarse a necesidades náuticas.",
+        "image": "/images/productos/botes/bote.png"
     },
     {
-        "title": "Remolques para botes",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/bote1.webp"
+        "title": "Remolque para botes",
+        "description": "Transporta botes de forma segura y sencilla con remolques diseñados para adaptarse a necesidades náuticas.",
+        "image": "/images/productos/botes/bote1.png"
     },
     {
-        "title": "Remolques para botes",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/bote2.webp"
-    },
-    {
-        "title": "Remolques para botes",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/bote3.webp"
-    },
-    {
-        "title": "Remolques para botes",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/bote4.webp"
+        "title": "Remolque para botes",
+        "description": "Transporta botes de forma segura y sencilla con remolques diseñados para adaptarse a necesidades náuticas.",
+        "image": "/images/productos/botes/bote2.png"
     }
 ]

@@ -1,47 +1,82 @@
 [
     {
-        "title": "Remolques para carga de 01 EJE",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/industrial1eje0.webp"
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje.png"
     },
     {
-        "title": "Remolques para carga de 01 EJE",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/industrial1eje1.webp"
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje1.png"
     },
     {
-        "title": "Remolques para carga de 01 EJE",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/industrial1eje2.webp"
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje2.png"
     },
     {
-        "title": "Remolques para carga de 01 EJE",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/industrial1eje3.webp"
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje3.png"
     },
     {
-        "title": "Remolques para carga de 01 EJE",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/industrial1eje4.webp"
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje4.png"
     },
     {
-        "title": "Remolques para carga de 01 EJE",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/industrial1eje5.webp"
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje5.png"
     },
     {
-        "title": "Remolques para carga de 01 EJE",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/industrial1eje6.webp"
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje6.png"
     },
     {
-        "title": "Remolques para carga de 01 EJE",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/industrial1eje7.webp"
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje7.png"
     },
     {
-        "title": "Remolques para carga de 01 EJE",
-        "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-        "image": "/images/productos/industrial1eje8.webp"
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje8.png"
+    },
+    {
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje9.png"
+    },
+    {
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje10.png"
+    },
+    {
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje11.png"
+    },
+    {
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje12.png"
+    },
+    {
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje13.png"
+    },
+    {
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje14.png"
+    },
+    {
+        "title": "Remolque de 01 EJE",
+        "description": "Diseñados para satisfacer tus necesidades de carga de manera eficiente y segura.",
+        "image": "/images/productos/01-eje/01_eje15.png"
     }
 ]
