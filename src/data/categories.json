@@ -2,73 +2,73 @@
     {
       "title": "Remolques para Sector Agrícola",
       "description": "Diseñado para satisfacer las demandas del sector agrícola.",
-      "image": "/images/category1.png",
+      "image": "./images/category1.webp",
       "link": "/productos/remolques-para-sector-agricola"
     },
     {
       "title": "Remolques para Minería y construcción",
       "description": "Capacidad para soportar equipos pesados con seguridad.",
-      "image": "/images/category2.png",
+      "image": "./images/category2.webp",
       "link": "/productos/remolques-para-mineria-y-construccion"
     },
     {
       "title": "Remolques para Tanques IBC",
       "description": "Especialmente diseñados para el transporte seguro y eficiente de tanques IBC.",
-      "image": "/images/category12.png",
+      "image": "./images/category12.webp",
       "link": "/productos/remolques-para-tanque-ibc"
     },
     {
       "title": "Remolques de 1 Eje",
       "description": "Versátil y eficiente para múltiples usos industriales.",
-      "image": "/images/category3.png",
+      "image": "./images/category3.webp",
       "link": "/productos/remolques-de-1-eje"
     },
     {
       "title": "Remolques de 2 Ejes",
       "description": "Mayor capacidad de carga para proyectos industriales exigentes.",
-      "image": "/images/category4.png",
+      "image": "./images/category4.webp",
       "link": "/productos/remolques-de-2-ejes"
     },
     {
       "title": "Remolques para Bote",
       "description": "Transporta tu bote de forma segura y eficiente.",
-      "image": "/images/category5.png",
+      "image": "./images/category5.webp",
       "link": "/productos/remolques-para-bote"
     },
     {
       "title": "Remolques Porta Bobina",
       "description": "Especializado en el transporte de bobinas de gran tamaño.",
-      "image": "/images/category6.png",
+      "image": "./images/category6.webp",
       "link": "/productos/remolques-porta-bobina"
     },
     {
       "title": "Remolques Porta Escalera",
       "description": "Optimizado para el transporte de escaleras y herramientas.",
-      "image": "/images/category7.png",
+      "image": "./images/category7.webp",
       "link": "/productos/remolques-porta-escalera"
     },
     {
       "title": "Remolques para Cuatrimoto",
       "description": "Diseño ideal para transportar cuatrimotos con facilidad.",
-      "image": "/images/category8.png",
+      "image": "./images/category8.webp",
       "link": "/productos/remolques-para-cuatrimoto"
     },
     {
       "title": "Remolques para Moto",
       "description": "Perfecto para el transporte seguro de motocicletas.",
-      "image": "/images/category9.png",
+      "image": "./images/category9.webp",
       "link": "/productos/remolques-para-moto"
     },
     {
       "title": "Remolques para Caballo y Ganadería",
       "description": "Especializado en el transporte de animales de granja.",
-      "image": "/images/category10.png",
+      "image": "./images/category10.webp",
       "link": "/productos/remolques-para-caballo-y-ganaderia"
     },
     {
       "title": "Remolques para Grupo Electrógeno y Compresores",
       "description": "Soluciones ideales para equipos industriales de energía.",
-      "image": "/images/category11.png",
+      "image": "./images/category11.webp",
       "link": "/productos/remolques-porta-grupo-electrogeno-y-compresores"
     }
 ]
