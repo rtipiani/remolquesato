@@ -29,7 +29,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 				{agricolas.map((agricola) => {
-					const imagePath = agricola.image.replace('./images', '/src/assets/images');
+					const imagePath = agricola.image.replace('./images', '/src/assets/images').replace('/images', '/src/assets/images');
 					const imagePromise = images[imagePath] ? images[imagePath]() : agricola.image;
 					return (
 					<div class="rounded-lg border border-[#7dc35a] shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col">
