@@ -6,6 +6,6 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://remolquesato.com',
+  site: 'https://fabricaderemolquesato.com',
   integrations: [tailwind(), sitemap()]
 });
