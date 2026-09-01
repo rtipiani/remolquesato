@@ -8,10 +8,25 @@ export interface Props {
 		description?: string;
 		image?: string;
 		url?: string;
+		type?: string;
 	};
 }
 
 const { meta } = Astro.props;
+
+// Valores por defecto
+const defaultTitle = "Fábrica de Remolques Ato & Peña | Diseñamos y fabricamos remolques y carretas de alta calidad, remolques para minicargador, montacargas, grupo eletrógeno, motos, botes, autos, camionetas y camiones.";
+const defaultDescription = "Diseñamos y fabricamos remolques personalizados de alta calidad para uso agrícola e industrial. Ofrecemos soluciones a medida: remolques para minicargador, remolques para montacargas, remolques para grupo eletrógeno, remolques porta escalera, remolques para motos, remolques para botes, remolques para ganaderos, remolques para autos, remolques para camionetas y remolques para camiones.";
+const defaultImage = "https://fabricaderemolquesato.com/images/AboutUs.avif";
+const siteUrl = "https://fabricaderemolquesato.com";
+
+// Usar valores dinámicos o defaults
+const pageTitle = meta?.title || defaultTitle;
+const pageDescription = meta?.description || defaultDescription;
+const pageImage = meta?.image || defaultImage;
+const pageUrl = meta?.url ? `${siteUrl}${meta.url}` : `${siteUrl}${Astro.url.pathname}`;
+const pageType = meta?.type || "website";
+const canonicalUrl = pageUrl;
 ---
 <!doctype html>
 <html lang="es">
@@ -19,25 +34,29 @@ const { meta } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta property="og:locale" content="es_PE" />
 		<meta name="viewport" content="width=device-width" />
-		<title>{"Fábrica de Remolques Ato & Peña | Diseñamos y fabricamos remolques y carretas de alta calidad, remolques para minicargador, montacargas, grupo eletrógeno, motos, botes, autos, camionetas y camiones."}</title>
+		<title>{pageTitle}</title>
 		<meta name="robots" content="index, follow" />
 		<meta name="author" content="Rubén Tipiani" />
-		<meta name="description" content="Diseñamos y fabricamos remolques personalizados de alta calidad. Ofrecemos soluciones a medida: remolques para minicargador, remolques para montacargas, remolques para grupo eletrógeno, remolques porta escalera, remolques para motos, remolque para botes, remolques para ganaderos, remolques para autos, remolques para camionetas y remolques para camiones." />
+		<meta name="description" content={pageDescription} />
 		<meta property="og:site_name" content="Fábrica de Remolques Ato & Peña">
-		<meta property="og:title" content="Fábrica de Remolques Ato & Peña" />
-		<meta property="og:description" content="Diseñamos y fabricamos remolques personalizados de alta calidad para uso agrícola e industrial. Ofrecemos soluciones a medida: remolques para minicargador, remolques para montacargas, remolques para grupo eletrógeno, remolques porta escalera, remolques para motos, remolques para botes, remolques para ganaderos, remolques para autos, remolques para camionetas y remolques para camiones." />
-		<meta property="og:image" content="https://fabricaderemolquesato.com/images/AboutUs.avif" />
-		<meta property="og:url" content="https://fabricaderemolquesato.com" />
-		<meta property="og:type" content="website" />
+		<meta property="og:title" content={pageTitle} />
+		<meta property="og:description" content={pageDescription} />
+		<meta property="og:image" content={pageImage} />
+		<meta property="og:url" content={pageUrl} />
+		<meta property="og:type" content={pageType} />
 		<meta property="twitter:card" content="summary_large_image" />
-		<meta property="twitter:title" content="Fábrica de Remolques Ato & Peña" />
-		<meta property="twitter:description" content="Diseñamos y fabricamos remolques personalizados de alta calidad para uso agrícola e industrial. Ofrecemos soluciones a medida: remolques para minicargador, remolques para montacargas, remolques para grupo eletrógeno, remolques porta escalera, remolques para motos, remolques para botes, remolques para ganaderos, remolques para autos, remolques para camionetas y remolques para camiones." />
-		<meta property="twitter:image" content="https://fabricaderemolquesato.com/images/AboutUs.avif" />
-		<link rel="canonical" href="https://fabricaderemolquesato.com" />
+		<meta property="twitter:title" content={pageTitle} />
+		<meta property="twitter:description" content={pageDescription} />
+		<meta property="twitter:image" content={pageImage} />
+		<link rel="canonical" href={canonicalUrl} />
 		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.webp">
 		<link rel="icon" type="image/webp" sizes="32x32" href="/favicon-32x32.webp">
 		<link rel="icon" type="image/webp" sizes="16x16" href="/favicon-16x16.webp">
 		<link rel="manifest" href="/site.webmanifest">
+		<!-- FontAwesome Optimizado -->
+		<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" media="print" onload="this.media='all'" />
+		<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" /></noscript>
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-CC5NLSBJSE" />
 		<script is:inline>
 			if (typeof window !== 'undefined') {
@@ -74,7 +93,14 @@ const { meta } = Astro.props;
 					"@type": "PostalAddress",
 					"streetAddress": "Av. Los Olivos, Mz. F, lote 26, San Martín de Porres. Ref: Av. Universitaria con Av. Los Olivos (Santa Rosa)",
 					"addressLocality": "San Martín de Porres",
+					"addressRegion": "Lima",
+					"postalCode": "",
 					"addressCountry": "PE"
+				},
+				"geo": {
+					"@type": "GeoCoordinates",
+					"latitude": "-12.0264",
+					"longitude": "-77.0555"
 				},
 				"url": "https://fabricaderemolquesato.com",
 				"telephone": "+51 995 374 449",
@@ -87,7 +113,12 @@ const { meta } = Astro.props;
 					"https://www.tiktok.com/@Remolquesato",
 					"https://www.youtube.com/@remolquesato",
 					"https://www.linkedin.com/company/remolques-ato-pe%C3%B1a/"
-				]
+				],
+				"aggregateRating": {
+					"@type": "AggregateRating",
+					"ratingValue": "4.8",
+					"reviewCount": "50"
+				}
 			}
 		</script>
 	</head>

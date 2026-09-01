@@ -4,10 +4,10 @@ import categories from "../data/categories.json";
 <section id="categoria" class="bg-gray-50 py-12 px-6 md:px-12 pt-24">
     <div class="container mx-auto text-center">
         <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-5">
-            Nuestros Remolques
+            Nuestros Remolques - Fabricación y Comercialización
         </h2>
         <p class="text-gray-600 text-md lg:text-xl mb-10 max-w-4xl mx-auto">
-            Encuentra el remolque perfecto para cada necesidad. <br /> Fabricamos remolques a medida para los sectores agrícola, minero, de telecomunicaciones e industrial, utilizando materiales de alta calidad para asegurar durabilidad y rendimiento óptimo en cada aplicación.
+            Fabricamos, vendemos y comercializamos remolques personalizados para minicargadores, montacargas, retroexcavadoras, miniexcavadoras, grupos electrógenos, cuatrimotos y más. <br /> Especialistas en soluciones a medida para sectores agrícola, minería, construcción e industrial, con materiales de alta calidad y rendimiento óptimo.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {categories.map(category => (
@@ -15,7 +15,7 @@ import categories from "../data/categories.json";
                     <div class="w-full h-64 sm:h-80 md:h-72 bg-white flex items-center justify-center relative overflow-hidden rounded-lg">
                         <img 
                             src={category.image} 
-                            alt={category.title} loading="lazy" 
+                            alt={category.title} loading="lazy" decoding="async" width="800" height="600"
                             class="w-full h-full object-cover rounded-t-lg shadow-lg transition-all duration-500" 
                         />
                     </div>

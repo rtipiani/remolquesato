@@ -1,13 +1,21 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import escaleras from '../../data/remolques-porta-escalera.json';
+
+const meta = {
+	title: "Remolques Porta Escalera | Transporte de Herramientas",
+	description: "Remolques optimizados para el transporte de escaleras y herramientas. Diseño seguro y eficiente para profesionales y contratistas.",
+	image: "https://remolquesato.com/images/category7.avif",
+	url: "/productos/remolques-porta-escalera",
+	type: "product"
+};
 ---
-<Layout>
+<Layout meta={meta}>
     <section class="bg-gray-50 py-12 px-6 md:px-12">
         <div class="container mx-auto text-center">
-            <h2 class="text-md md:text-xl lg:text-3xl font-bold text-gray-800 mb-4">
-                Remolques <br /> Porta Escalera
-            </h2>
+            <h1 class="text-md md:text-xl lg:text-3xl font-bold text-gray-800 mb-4">
+                Remolques Porta Escalera: Transporte de Herramientas
+            </h1>
             <p class="text-gray-600 text-sm md:text-1xl mb-10 max-w-4xl mx-auto">
                 Encuentra el remolque perfecto diseñado específicamente para cada sector y necesidad.
             </p>
@@ -21,13 +29,13 @@ import escaleras from '../../data/remolques-porta-escalera.json';
 				{escaleras.map((escalera) => (
 					<div class="rounded-lg border border-[#7dc35a] shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col">
 						<div class="w-full flex items-center justify-center overflow-hidden">
-							<img src={escalera.image} alt={escalera.title} loading="lazy" class="w-full h-full object-contain rounded-t-lg"/>
+							<img src={escalera.image} alt={escalera.title} loading="lazy" decoding="async" width="800" height="600" class="w-full h-full object-contain rounded-t-lg"/>
 						</div>
 				
 						<div class="p-6 text-center">
-							<h3 class="text-xl font-bold text-gray-800 mb-2">
+							<h2 class="text-xl font-bold text-gray-800 mb-2">
 								{escalera.title}
-							</h3>
+							</h2>
 				
 							<p class="text-gray-600 text-sm mb-5">
 								{escalera.description}

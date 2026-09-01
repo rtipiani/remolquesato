@@ -1,13 +1,21 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import paneles from '../../data/remolques-para-tanque-ibc.json';
+
+const meta = {
+	title: "Remolques para Tanques IBC | Transporte Seguro de Líquidos",
+	description: "Remolques especialmente diseñados para el transporte seguro y eficiente de tanques IBC. Fabricación robusta con sistemas de sujeción confiables.",
+	image: "https://remolquesato.com/images/category12.avif",
+	url: "/productos/remolques-para-tanque-ibc",
+	type: "product"
+};
 ---
-<Layout>
+<Layout meta={meta}>
     <section class="bg-gray-50 py-12 px-6 md:px-12">
         <div class="container mx-auto text-center">
-            <h2 class="text-md md:text-xl lg:text-3xl font-bold text-gray-800 mb-4">
-                Remolques <br /> para Tanques IBC
-            </h2>
+            <h1 class="text-md md:text-xl lg:text-3xl font-bold text-gray-800 mb-4">
+                Remolques para Tanques IBC: Transporte Seguro de Líquidos
+            </h1>
             <p class="text-gray-600 text-lg sm:text-xl md:text-1xl mb-10 max-w-4xl mx-auto">
                 Encuentra el remolque perfecto diseñado específicamente para cada sector y necesidad.
             </p>
@@ -21,13 +29,13 @@ import paneles from '../../data/remolques-para-tanque-ibc.json';
 				{paneles.map((panel) => (
 					<div class="rounded-lg border border-[#7dc35a] shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col">
 						<div class="w-full flex items-center justify-center overflow-hidden">
-							<img src={panel.image} alt={panel.title} loading="lazy" class="w-full h-full object-contain rounded-t-lg" />
+							<img src={panel.image} alt={panel.title} loading="lazy" decoding="async" width="800" height="600" class="w-full h-full object-contain rounded-t-lg" />
 						</div>
 				
 						<div class="p-6 text-center">
-							<h3 class="text-xl font-bold text-gray-800 mb-2">
+							<h2 class="text-xl font-bold text-gray-800 mb-2">
 							{panel.title}
-							</h3>
+							</h2>
 					
 							<p class="text-gray-600 text-sm mb-5">
 								{panel.description}

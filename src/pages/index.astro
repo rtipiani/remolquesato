@@ -6,9 +6,17 @@ import Categoria from '../components/Categoria.astro';
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Maps from '../components/Maps.astro';
+
+const meta = {
+	title: "Remolques Ato & Peña | Fabricación y Ventas de Remolques Personalizados",
+	description: "Especialistas en fabricación, ventas y comercialización de remolques para minicargadores, montacargas, retroexcavadoras, miniexcavadoras, grupos electrógenos y cuatrimotos. Soluciones a medida.",
+	url: "/",
+	type: "website"
+};
 ---
-<Layout>
+<Layout meta={meta}>
 	<Navbar />
+	<h1 class="sr-only">Fábrica de Remolques Ato & Peña - Venta de Remolques Personalizados</h1>
 	<Slider />
 	<Features />
 	<AboutUs />

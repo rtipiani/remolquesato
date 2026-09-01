@@ -1,0 +1,45 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const meta = {
+	title: "Página No Encontrada | Remolques Ato & Peña",
+	description: "La página que buscas no existe. Vuelve a la página principal o explora nuestros remolques personalizados.",
+	url: "/404",
+	type: "page"
+};
+---
+<Layout meta={meta}>
+	<section class="bg-gradient-to-b from-gray-50 to-white min-h-screen flex items-center justify-center px-6 py-12">
+		<div class="text-center max-w-md">
+			<div class="mb-8">
+				<h1 class="text-9xl font-bold text-[#7dc35a] mb-4">404</h1>
+				<h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+					Página no encontrada
+				</h2>
+				<p class="text-gray-600 text-lg mb-8">
+					Lo sentimos, la página que buscas no existe o ha sido movida. Por favor, intenta nuevamente o vuelve al inicio.
+				</p>
+			</div>
+
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="/" class="inline-flex items-center justify-center bg-[#7dc35a] text-black px-6 py-3 rounded-lg font-semibold hover:bg-[#6ab649] transition">
+					<i class="fas fa-home mr-2"></i>
+					Ir al Inicio
+				</a>
+				<a href="/#categoria" class="inline-flex items-center justify-center bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+					<i class="fas fa-box mr-2"></i>
+					Ver Productos
+				</a>
+			</div>
+
+			<div class="mt-12">
+				<p class="text-gray-500 text-sm">
+					¿Necesitas ayuda? 
+					<a href="https://wa.me/+51995374449?text=Hola%20Remolques%20ATO%20%26%20PE%C3%91A,%20tengo%20una%20pregunta." target="_blank" rel="noopener noreferrer" class="text-[#7dc35a] font-semibold hover:underline">
+						Contáctanos aquí
+					</a>
+				</p>
+			</div>
+		</div>
+	</section>
+</Layout>

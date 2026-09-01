@@ -1,15 +1,23 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import compresores from '../../data/remolques-porta-grupo-electrogeno-y-compresores.json';
+
+const meta = {
+	title: "Remolques Porta Grupos Electrógenos | Fabricación y Comercialización",
+	description: "Fabricación y comercialización de remolques especializados para grupos electrógenos y compresores. Transporte seguro de equipos de alto valor con sistemas de amarre robusto.",
+	image: "https://remolquesato.com/images/category8.avif",
+	url: "/productos/remolques-porta-grupo-electrogeno-y-compresores",
+	type: "product"
+};
 ---
-<Layout>
+<Layout meta={meta}>
     <section class="bg-gray-50 py-12 px-6 md:px-12">
         <div class="container mx-auto text-center">
-            <h2 class="text-md md:text-xl lg:text-3xl font-bold text-gray-800 mb-4">
-                Remolques <br /> porta Grupo Electrógenos y Compresores
-            </h2>
+            <h1 class="text-md md:text-xl lg:text-3xl font-bold text-gray-800 mb-4">
+                Remolques Porta Grupos Electrógenos: Fabricación y Ventas
+            </h1>
             <p class="text-gray-600 text-lg sm:text-xl md:text-1xl mb-10 max-w-4xl mx-auto">
-                Encuentra el remolque perfecto diseñado específicamente para cada sector y necesidad.
+                Fabricamos y comercializamos remolques especializados para el transporte seguro de grupos electrógenos, compresores y equipos pesados.
             </p>
             <div class="flex justify-center mb-10">
 				<a href="/#categoria" class="flex items-center gap-2 text-primary font-semibold text-lg hover:text-[#7dc35a] transition-colors">
@@ -21,13 +29,13 @@ import compresores from '../../data/remolques-porta-grupo-electrogeno-y-compreso
 				{compresores.map((compresor) => (
 					<div class="rounded-lg border border-[#7dc35a] shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col">
 						<div class="w-full flex items-center justify-center overflow-hidden">
-							<img src={compresor.image} alt={compresor.title} loading="lazy" class="w-full h-full object-contain rounded-t-lg" />
+							<img src={compresor.image} alt={compresor.title} loading="lazy" decoding="async" width="800" height="600" class="w-full h-full object-contain rounded-t-lg" />
 						</div>
 				
 						<div class="p-6 text-center">
-							<h3 class="text-xl font-bold text-gray-800 mb-2">
+							<h2 class="text-xl font-bold text-gray-800 mb-2">
 								{compresor.title}
-							</h3>
+							</h2>
 				
 							<p class="text-gray-600 text-sm mb-5">
 								{compresor.description}
