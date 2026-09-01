@@ -1,4 +1,5 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
 import ganaderias from '../../data/remolques-para-caballo-y-ganaderia.json';
 
@@ -9,6 +10,7 @@ const meta = {
 	url: "/productos/remolques-para-caballo-y-ganaderia",
 	type: "product"
 };
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/**/*.{jpeg,jpg,png,gif,webp,avif}');
 ---
 <Layout meta={meta}>
     <section class="bg-gray-50 py-12 px-6 md:px-12">
@@ -26,10 +28,13 @@ const meta = {
 				</a>
 			</div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-				{ganaderias.map((ganaderia) => (
+				{ganaderias.map((ganaderia) => {
+					const imagePath = ganaderia.image.replace('./images', '/src/assets/images');
+					const imagePromise = images[imagePath] ? images[imagePath]() : ganaderia.image;
+					return (
 					<div class="rounded-lg border border-[#7dc35a] shadow-sm hover:shadow-md transition-shadow duration-150 flex flex-col">
 						<div class="w-full flex items-center justify-center overflow-hidden">
-							<img src={ganaderia.image} alt={ganaderia.title} loading="lazy" decoding="async" width="800" height="600" class="w-full h-full object-contain rounded-t-lg" />
+							<Image src={imagePromise} alt={ganaderia.title} loading="lazy" decoding="async" width="800" height="600" class="w-full h-full object-contain rounded-t-lg" />
 						</div>
 				
 						<div class="p-6 text-center">
@@ -47,7 +52,7 @@ const meta = {
 							</a>
 						</div>
 					</div>
-				))}
+				)})}
             </div>            
         </div>
     </section>

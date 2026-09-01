@@ -1,21 +1,26 @@
 ---
+import { Image } from 'astro:assets';
+import slide1 from '../assets/images/slide1.avif';
+import slide2 from '../assets/images/slide2.avif';
+import slide3 from '../assets/images/slide3.avif';
+
 const slides = [
     {
-        src: 'images/slide1.avif',
+        src: slide1,
         alt: 'Remolques para Sector Agrícola - Fabricación y Comercialización',
         title: 'para maquinaria del Sector Agrícola',
         description: 'Fabricamos y comercializamos remolques para tractores, sembradoras y cosechadoras. Especialistas en soluciones agrícolas.',
         whatsappLink: 'https://wa.me/+51995374449?text=Hola%20Remolques%20ATO%20%26%20PE%C3%91A,%20me%20interesan%20los%20remolques%20para%20el%20sector%20agr%C3%ADcola.%20%C2%BFPueden%20darme%20m%C3%A1s%20informaci%C3%B3n%3F'
     },
     {
-        src: 'images/slide2.avif',
+        src: slide2,
         alt: 'Remolques para Minería - Retroexcavadora, Miniexcavadora, Montacargas',
         title: 'para equipos de Minería y Construcción',
         description: 'Fabricación de remolques para retroexcavadoras, miniexcavadoras, montacargas y maquinaria pesada. Comercialización directa.',
         whatsappLink: 'https://wa.me/+51995374449?text=Hola%20Remolques%20ATO%20%26%20PE%C3%91A,%20me%20interesan%20los%20remolques%20para%20construcci%C3%B3n%20y%20miner%C3%ADa.%20%C2%BFPodr%C3%ADan%20ayudarme%20con%20más%20informaci%C3%B3n%3F'
     },
     {
-        src: 'images/slide3.avif',
+        src: slide3,
         alt: 'Remolques para Grupos Electrógenos y Telecomunicaciones',
         title: 'para Grupos Electrógenos y Telecomunicaciones',
         description: 'Vendemos y fabricamos remolques especializados para grupos electrógenos, compresores y equipos de telecomunicaciones.',
@@ -27,7 +32,7 @@ const slides = [
     <div id="slider" class="flex transition-transform duration-700 ease-in-out h-full">
         {slides.map((slide, index) => (
             <div class="relative flex-shrink-0 w-full h-full">
-                <img src={slide.src} alt={slide.alt} class="w-full h-full object-cover" loading={index === 0 ? "eager" : "lazy"} width="1200" height="650"/>
+                <Image src={slide.src} alt={slide.alt} class="w-full h-full object-cover" loading={index === 0 ? "eager" : "lazy"} width={1200} height={650}/>
 
                 <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center px-4 md:px-8 lg:px-12 text-white">
                     <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2">
