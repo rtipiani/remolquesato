@@ -38,17 +38,17 @@ const slides = [
                 <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
 
-                <div class="absolute inset-0 flex flex-col justify-center items-start text-left px-8 md:px-16 lg:px-24 xl:px-32 text-white">
+                <div class="absolute inset-0 flex flex-col justify-center items-start text-left px-6 sm:px-12 md:px-16 lg:px-24 xl:px-32 text-white">
                     <span class="text-[#7dc35a] font-bold tracking-[0.2em] uppercase text-xs sm:text-sm md:text-base mb-4 drop-shadow-md">
                         Calidad & Resistencia
                     </span>
                     <h2 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-extrabold mb-2 leading-tight drop-shadow-xl">
                         Remolques
                     </h2>
-                    <p class="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-light text-white/90 mb-6 drop-shadow-lg max-w-[90%] md:max-w-[70%] leading-tight">
+                    <p class="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-light text-white/90 mb-6 drop-shadow-lg max-w-[95%] md:max-w-[70%] leading-tight">
                         {slide.title}
                     </p>
-                    <p class="text-sm sm:text-base md:text-lg text-gray-300 mb-8 max-w-[90%] sm:max-w-xl leading-relaxed drop-shadow-md border-l-4 border-[#7dc35a] pl-4">
+                    <p class="text-sm sm:text-base md:text-lg text-gray-300 mb-8 max-w-[95%] sm:max-w-xl leading-relaxed drop-shadow-md border-l-4 border-[#7dc35a] pl-4">
                         {slide.description}
                     </p>
                     
@@ -64,12 +64,12 @@ const slides = [
         ))}
     </div>
 
-    <!-- Botones de navegación con Glassmorphism -->
-    <button id="prevBtn" class="absolute top-1/2 left-4 md:left-8 -translate-y-1/2 w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full bg-black/20 backdrop-blur-md border border-white/20 hover:bg-[#7dc35a] text-white hover:text-black transition-all duration-300 shadow-lg group z-10" aria-label="Anterior">
+    <!-- Botones de navegación (Ocultos en móvil, funcionales en Desktop) -->
+    <button id="prevBtn" class="absolute top-1/2 left-4 md:left-8 -translate-y-1/2 hidden sm:flex w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 items-center justify-center rounded-full bg-black/20 backdrop-blur-md border border-white/20 hover:bg-[#7dc35a] text-white hover:text-black transition-all duration-300 shadow-lg group z-10" aria-label="Anterior">
         <i class="fas fa-chevron-left text-lg md:text-2xl transform group-hover:-translate-x-1 transition-transform"></i>
     </button>
 
-    <button id="nextBtn" class="absolute top-1/2 right-4 md:right-8 -translate-y-1/2 w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full bg-black/20 backdrop-blur-md border border-white/20 hover:bg-[#7dc35a] text-white hover:text-black transition-all duration-300 shadow-lg group z-10" aria-label="Siguiente">
+    <button id="nextBtn" class="absolute top-1/2 right-4 md:right-8 -translate-y-1/2 hidden sm:flex w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 items-center justify-center rounded-full bg-black/20 backdrop-blur-md border border-white/20 hover:bg-[#7dc35a] text-white hover:text-black transition-all duration-300 shadow-lg group z-10" aria-label="Siguiente">
         <i class="fas fa-chevron-right text-lg md:text-2xl transform group-hover:translate-x-1 transition-transform"></i>
     </button>
 
@@ -92,7 +92,7 @@ const slides = [
         const nextBtn = document.getElementById("nextBtn");
         const indicators = Array.from(document.querySelectorAll("[data-index]"));
 
-        if (!slider || !prevBtn || !nextBtn) {
+        if (!slider) {
             return;
         }
 
@@ -122,15 +122,19 @@ const slides = [
             });
         };
 
-        prevBtn.addEventListener("click", () => {
-            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-            updateSlider();
-        });
+        if (prevBtn) {
+            prevBtn.addEventListener("click", () => {
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                updateSlider();
+            });
+        }
 
-        nextBtn.addEventListener("click", () => {
-            currentSlide = (currentSlide + 1) % slides.length;
-            updateSlider();
-        });
+        if (nextBtn) {
+            nextBtn.addEventListener("click", () => {
+                currentSlide = (currentSlide + 1) % slides.length;
+                updateSlider();
+            });
+        }
 
         indicators.forEach((dot) => {
             dot.addEventListener("click", () => {
@@ -141,6 +145,32 @@ const slides = [
                 }
             });
         });
+
+        // Soporte para gestos táctiles (Swipe) en móviles
+        let startX = 0;
+        let endX = 0;
+
+        slider.addEventListener('touchstart', (e) => {
+            startX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        slider.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+
+        const handleSwipe = () => {
+            if (endX < startX - 40) {
+                // Swipe a la izquierda (Siguiente)
+                currentSlide = (currentSlide + 1) % slides.length;
+                updateSlider();
+            }
+            if (endX > startX + 40) {
+                // Swipe a la derecha (Anterior)
+                currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                updateSlider();
+            }
+        };
 
         setInterval(() => {
             currentSlide = (currentSlide + 1) % slides.length;
