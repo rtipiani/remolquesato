@@ -3,7 +3,7 @@ Allow: /
 Disallow: /admin
 Disallow: /*.json$
 
-Sitemap: https://remolquesato.com/sitemap-index.xml
+Sitemap: https://fabricaderemolquesato.com/sitemap-index.xml
 
 # Crawl delay (optional)
 Crawl-delay: 1
