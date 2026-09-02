@@ -28,43 +28,56 @@ const slides = [
     }
 ];
 ---
-<div class="relative w-full h-screen overflow-hidden">
-    <div id="slider" class="flex transition-transform duration-700 ease-in-out h-full">
+<div class="relative w-full h-[90vh] min-h-[600px] overflow-hidden">
+    <div id="slider" class="flex transition-transform duration-700 ease-out h-full">
         {slides.map((slide, index) => (
             <div class="relative flex-shrink-0 w-full h-full">
-                <Image src={slide.src} alt={slide.alt} class="w-full h-full object-cover" loading={index === 0 ? "eager" : "lazy"} fetchpriority={index === 0 ? "high" : "auto"} width={1200} height={650}/>
+                <Image src={slide.src} alt={slide.alt} class="w-full h-full object-cover" loading={index === 0 ? "eager" : "lazy"} fetchpriority={index === 0 ? "high" : "auto"} width={1920} height={1080}/>
 
-                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center px-4 md:px-8 lg:px-12 text-white">
-                    <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-2">
+                <!-- Gradientes para mejorar legibilidad y aspecto premium -->
+                <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-transparent"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20"></div>
+
+                <div class="absolute inset-0 flex flex-col justify-center items-start text-left px-8 md:px-16 lg:px-24 xl:px-32 text-white">
+                    <span class="text-[#7dc35a] font-bold tracking-[0.2em] uppercase text-xs sm:text-sm md:text-base mb-4 drop-shadow-md">
+                        Calidad & Resistencia
+                    </span>
+                    <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-2 leading-tight drop-shadow-xl">
                         Remolques
                     </h2>
-                    <p class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium max-w-[90%] lg:max-w-[75%] mb-4">
+                    <p class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-white/90 mb-6 drop-shadow-lg max-w-[90%] md:max-w-[70%] leading-tight">
                         {slide.title}
                     </p>
-                    <p class="text-sm sm:text-base md:text-lg mb-6 max-w-[90%] md:max-w-[65%]">
+                    <p class="text-base sm:text-lg md:text-xl text-gray-300 mb-10 max-w-[90%] sm:max-w-xl leading-relaxed drop-shadow-md border-l-4 border-[#7dc35a] pl-4">
                         {slide.description}
                     </p>
-                    <a href={slide.whatsappLink} target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-[#7dc35a] text-black px-4 py-2 sm:px-6 sm:py-3 rounded-full text-sm sm:text-base font-medium shadow-md hover:shadow-lg hover:scale-105 transition">
-                        Consultar ahora
-                        <i class="fa-brands fa-whatsapp text-lg ml-1"></i>
+                    
+                    <a href={slide.whatsappLink} target="_blank" rel="noopener noreferrer" class="group relative inline-flex items-center overflow-hidden rounded-full bg-[#7dc35a] px-6 py-3 sm:px-8 sm:py-4 text-black font-bold uppercase tracking-wider shadow-[0_0_20px_rgba(125,195,90,0.3)] hover:shadow-[0_0_30px_rgba(125,195,90,0.6)] hover:scale-105 transition-all duration-300">
+                        <span class="absolute inset-0 bg-white/30 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out"></span>
+                        <span class="relative flex items-center gap-2 text-sm sm:text-base">
+                            Consultar ahora
+                            <i class="fa-brands fa-whatsapp text-xl sm:text-2xl ml-1"></i>
+                        </span>
                     </a>
                 </div>
             </div>
         ))}
     </div>
 
-    <button id="prevBtn" class="absolute top-1/2 left-4 -translate-y-1/2 w-8 h-8 sm:w-16 sm:h-16 flex items-center justify-center rounded-full hover:opacity-100 hover:scale-105 transition transform" aria-label="Anterior">
-        <i class="fas fa-chevron-left text-[#7dc35a] fa-2x"></i>
+    <!-- Botones de navegación con Glassmorphism -->
+    <button id="prevBtn" class="absolute top-1/2 left-4 md:left-8 -translate-y-1/2 w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full bg-black/20 backdrop-blur-md border border-white/20 hover:bg-[#7dc35a] text-white hover:text-black transition-all duration-300 shadow-lg group z-10" aria-label="Anterior">
+        <i class="fas fa-chevron-left text-lg md:text-2xl transform group-hover:-translate-x-1 transition-transform"></i>
     </button>
 
-    <button id="nextBtn" class="absolute top-1/2 right-4 -translate-y-1/2 w-8 h-8 sm:w-16 sm:h-16 flex items-center justify-center rounded-full hover:opacity-100 hover:scale-105 transition transform" aria-label="Siguiente">
-        <i class="fas fa-chevron-right text-[#7dc35a] fa-2x"></i>
+    <button id="nextBtn" class="absolute top-1/2 right-4 md:right-8 -translate-y-1/2 w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center rounded-full bg-black/20 backdrop-blur-md border border-white/20 hover:bg-[#7dc35a] text-white hover:text-black transition-all duration-300 shadow-lg group z-10" aria-label="Siguiente">
+        <i class="fas fa-chevron-right text-lg md:text-2xl transform group-hover:translate-x-1 transition-transform"></i>
     </button>
 
-    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+    <!-- Indicadores tipo pill modernos -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
         {slides.map((_, i) => (
             <button
-                class={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-200 ${i === 0 ? "bg-[#7dc35a]" : "bg-white opacity-75"}`}
+                class={`h-2 rounded-full transition-all duration-500 ease-out ${i === 0 ? "w-8 bg-[#7dc35a]" : "w-2 bg-white/50 hover:bg-white/80"}`}
                 data-index={i}
                 aria-label={`Ir a la diapositiva ${i + 1}`}
             ></button>
@@ -100,11 +113,11 @@ const slides = [
 
             indicators.forEach((dot, index) => {
                 if (index === currentSlide) {
-                    dot.classList.add("bg-[#7dc35a]");
-                    dot.classList.remove("bg-white", "opacity-75");
+                    dot.classList.add("w-8", "bg-[#7dc35a]");
+                    dot.classList.remove("w-2", "bg-white/50", "hover:bg-white/80");
                 } else {
-                    dot.classList.add("bg-white", "opacity-75");
-                    dot.classList.remove("bg-[#7dc35a]");
+                    dot.classList.add("w-2", "bg-white/50", "hover:bg-white/80");
+                    dot.classList.remove("w-8", "bg-[#7dc35a]");
                 }
             });
         };
@@ -132,7 +145,7 @@ const slides = [
         setInterval(() => {
             currentSlide = (currentSlide + 1) % slides.length;
             updateSlider();
-        }, 5000);
+        }, 6000);
 
         updateSlider();
     });
