@@ -32,7 +32,7 @@ const slides = [
     <div id="slider" class="flex transition-transform duration-700 ease-out h-full">
         {slides.map((slide, index) => (
             <div class="relative flex-shrink-0 w-full h-full">
-                <Image src={slide.src} alt={slide.alt} class="w-full h-full object-cover" loading={index === 0 ? "eager" : "lazy"} fetchpriority={index === 0 ? "high" : "auto"} width={1920} height={1080}/>
+                <Image src={slide.src} alt={slide.alt} class="w-full h-full object-cover" loading={index === 0 ? "eager" : "lazy"} fetchpriority={index === 0 ? "high" : "auto"} width={1920} height={1080} widths={[640, 1024, 1920]} sizes="100vw"/>
 
                 <!-- Overlay oscuro sutil para que resalte la imagen y el texto a la vez -->
                 <div class="absolute inset-0 bg-black/50"></div>
