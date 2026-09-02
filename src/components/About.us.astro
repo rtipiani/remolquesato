@@ -1,53 +1,135 @@
 ---
-import { Image } from 'astro:assets';
-import aboutImage from '../assets/images/AboutUs.avif';
-import logoImage from '../assets/images/logo_ato.avif';
+import { Image } from "astro:assets";
+import aboutImage from "../assets/images/AboutUs.avif";
+import logoImage from "../assets/images/logo_ato.avif";
 ---
 
-<section id="nosotros" class="bg-white pt-12 pb-4 md:pt-12 md:pb-8 px-2 sm:px-6 md:px-12 pt-24">
+<section
+    id="nosotros"
+    class="bg-white pt-12 pb-4 md:pt-12 md:pb-8 px-2 sm:px-6 md:px-12 pt-24"
+>
     <div class="container mx-auto text-center w-full">
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:mb-6 leading-tight px-4">
-            Fabricación y Ventas <br class="hidden md:block" />de Remolques Personalizados
+        <h2
+            class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 md:mb-6 leading-tight px-4"
+        >
+            Fabricación y Ventas <br class="hidden md:block" />de Remolques
+            Personalizados
         </h2>
 
-        <p class="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl mb-8 md:mb-10 max-w-4xl mx-auto leading-relaxed px-4">
-            Somos expertos en fabricación, ventas y comercialización de remolques a medida. Especializados en equipos para minicargadores, montacargas, retroexcavadoras, miniexcavadoras, grupos electrógenos, cuatrimotos y más. Cada remolque está diseñado con calidad y funcionalidad para tus necesidades específicas.
+        <p
+            class="text-gray-600 text-sm sm:text-base md:text-lg lg:text-xl mb-8 md:mb-10 max-w-4xl mx-auto leading-relaxed px-4"
+        >
+            Somos expertos en fabricación, ventas y comercialización de
+            remolques a medida. Especializados en equipos para minicargadores,
+            montacargas, retroexcavadoras, miniexcavadoras, grupos electrógenos,
+            cuatrimotos y más. Cada remolque está diseñado con calidad y
+            funcionalidad para tus necesidades específicas.
         </p>
 
-        <div class="relative w-full max-w-5xl mx-auto overflow-hidden rounded-xl shadow-lg group">
-            <Image src={aboutImage} loading="lazy" decoding="async" width={1200} height={800} alt="Remolques Ato & Peña - Diseño y fabricación de remolques a medida" class="w-full h-[280px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px] object-cover transform transition-transform duration-700 group-hover:scale-105 group-hover:shadow-2xl" />
-            
-            <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-white p-4 gap-4 sm:gap-6">
-                <span class="text-center text-lg sm:text-xl md:text-2xl font-bold tracking-wide">Remolques <br class="sm:hidden" /> ATO & PEÑA</span>
+        <div
+            class="relative w-full max-w-5xl mx-auto overflow-hidden rounded-xl shadow-lg group"
+        >
+            <Image
+                src={aboutImage}
+                loading="lazy"
+                decoding="async"
+                width={1200}
+                height={800}
+                alt="Remolques Ato & Peña - Diseño y fabricación de remolques a medida"
+                class="w-full h-[280px] sm:h-[350px] md:h-[ 400px] lg:h-[450px] xl:h-[500px] object-cover transform transition-transform duration-700 group-hover:scale-105 group-hover:shadow-2xl"
+            />
 
-                <div class="flex justify-center items-center bg-white rounded-full border-[3px] border-secondary shadow-xl transition-transform duration-300 hover:scale-105" style="width: clamp(120px, 15vw, 160px); height: clamp(120px, 15vw, 160px);">
-                    <Image src={logoImage} loading="lazy" alt="Remolques ATO & PEÑA - Diseño y fabricación de remolques" class="object-contain w-full h-full p-4 sm:p-5" width={160} height={160} />
+            <div
+                class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-white p-4 gap-4 sm:gap-6"
+            >
+                <span
+                    class="text-center text-lg sm:text-xl md:text-2xl font-bold tracking-wide"
+                    >Remolques <br class="sm:hidden" /> ATO & PEÑA</span
+                >
+
+                <div
+                    class="flex justify-center items-center bg-white rounded-full border-[3px] border-secondary shadow-xl transition-transform duration-300 hover:scale-105"
+                    style="width: clamp(120px, 15vw, 160px); height: clamp(120px, 15vw, 160px);"
+                >
+                    <Image
+                        src={logoImage}
+                        loading="lazy"
+                        alt="Remolques ATO & PEÑA - Diseño y fabricación de remolques"
+                        class="object-contain w-full h-full p-4 sm:p-5"
+                        width={160}
+                        height={160}
+                    />
                 </div>
 
                 <div class="flex justify-center space-x-5 sm:space-x-6">
-                    <a href="https://www.facebook.com/estructurametalicaato" class="text-white transform transition-transform duration-300 hover:scale-125 hover:rotate-6 hover:text-secondary" target="_blank" rel="noopener noreferrer" aria-label="Visitar Facebook de Remolques Ato & Peña">
-                        <i class="fab fa-facebook text-xl sm:text-2xl" aria-hidden="true"></i>
+                    <a
+                        href="https://www.facebook.com/estructurametalicaato"
+                        class="text-white transform transition-transform duration-300 hover:scale-125 hover:rotate-6 hover:text-secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visitar Facebook de Remolques Ato & Peña"
+                    >
+                        <i
+                            class="fab fa-facebook text-xl sm:text-2xl"
+                            aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.instagram.com/remolquesato/" class="text-white transform transition-transform duration-300 hover:scale-125 hover:rotate-6 hover:text-secondary" target="_blank" rel="noopener noreferrer" aria-label="Visitar Instagram de Remolques Ato & Peña">
-                        <i class="fab fa-instagram text-xl sm:text-2xl" aria-hidden="true"></i>
+                    <a
+                        href="https://www.instagram.com/remolquesato/"
+                        class="text-white transform transition-transform duration-300 hover:scale-125 hover:rotate-6 hover:text-secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visitar Instagram de Remolques Ato & Peña"
+                    >
+                        <i
+                            class="fab fa-instagram text-xl sm:text-2xl"
+                            aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.tiktok.com/@Remolquesato" class="text-white transform transition-transform duration-300 hover:scale-125 hover:rotate-6 hover:text-secondary" target="_blank" rel="noopener noreferrer" aria-label="Visitar Tiktok de Remolques Ato & Peña">
-                        <i class="fab fa-tiktok text-xl sm:text-2xl" aria-hidden="true"></i>
+                    <a
+                        href="https://www.tiktok.com/@Remolquesato"
+                        class="text-white transform transition-transform duration-300 hover:scale-125 hover:rotate-6 hover:text-secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visitar Tiktok de Remolques Ato & Peña"
+                    >
+                        <i
+                            class="fab fa-tiktok text-xl sm:text-2xl"
+                            aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.youtube.com/@remolquesato" class="text-white transform transition-transform duration-300 hover:scale-125 hover:rotate-6 hover:text-secondary" target="_blank" rel="noopener noreferrer" aria-label="Visitar Youtube de Remolques Ato & Peña">
-                        <i class="fab fa-google text-xl sm:text-2xl" aria-hidden="true"></i>
+                    <a
+                        href="https://www.youtube.com/@remolquesato"
+                        class="text-white transform transition-transform duration-300 hover:scale-125 hover:rotate-6 hover:text-secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visitar Youtube de Remolques Ato & Peña"
+                    >
+                        <i
+                            class="fab fa-google text-xl sm:text-2xl"
+                            aria-hidden="true"></i>
                     </a>
-                    <a href="https://www.linkedin.com/company/remolques-ato-pe%C3%B1a/" class="text-white transform transition-transform duration-300 hover:scale-125 hover:rotate-6 hover:text-secondary" target="_blank" rel="noopener noreferrer" aria-label="Visitar Linkedin de Remolques Ato & Peña">
-                        <i class="fab fa-linkedin text-xl sm:text-2xl" aria-hidden="true"></i>
+                    <a
+                        href="https://www.linkedin.com/company/remolques-ato-pe%C3%B1a/"
+                        class="text-white transform transition-transform duration-300 hover:scale-125 hover:rotate-6 hover:text-secondary"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Visitar Linkedin de Remolques Ato & Peña"
+                    >
+                        <i
+                            class="fab fa-linkedin text-xl sm:text-2xl"
+                            aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
         </div>
 
         <div class="mt-6 md:mt-10">
-            <a href="https://wa.me/+51995374449?text=Hola%20Remolques%20ATO%20%26%20PEÑA,%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios."
-               class="inline-flex items-center bg-black text-white px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider shadow-[0_4px_15px_rgba(0,0,0,0.2)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:scale-105 hover:bg-gray-900 transition-all duration-300" target="_blank">
-                <i class="fa-brands fa-whatsapp text-[#25D366] text-base sm:text-lg md:text-xl mr-2"></i>
+            <a
+                href="https://wa.me/+51995374449?text=Hola%20Remolques%20ATO%20%26%20PEÑA,%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios."
+                class="inline-flex items-center bg-black text-white px-5 py-2.5 sm:px-6 sm:py-3 md:px-8 md:py-4 rounded-full text-xs sm:text-sm md:text-base font-bold uppercase tracking-wider shadow-[0_4px_15px_rgba(0,0,0,0.2)] hover:shadow-[0_4px_20px_rgba(0,0,0,0.3)] hover:scale-105 hover:bg-gray-900 transition-all duration-300"
+                target="_blank"
+            >
+                <i
+                    class="fa-brands fa-whatsapp text-[#25D366] text-base sm:text-lg md:text-xl mr-2"
+                ></i>
                 Contáctanos Ahora
             </a>
         </div>
