@@ -28,7 +28,7 @@ const slides = [
     }
 ];
 ---
-<div class="relative w-full h-[75vh] md:h-[80vh] lg:h-[90vh] min-h-[480px] md:min-h-[600px] overflow-hidden">
+<div class="relative w-full h-[85vh] md:h-[90vh] min-h-[550px] md:min-h-[600px] overflow-hidden">
     <div id="slider" class="flex transition-transform duration-700 ease-out h-full">
         {slides.map((slide, index) => (
             <div class="relative flex-shrink-0 w-full h-full">
@@ -37,17 +37,17 @@ const slides = [
                 <!-- Overlay oscuro sutil para que resalte la imagen y el texto a la vez -->
                 <div class="absolute inset-0 bg-black/50"></div>
 
-                <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-6 sm:px-12 md:px-16 lg:px-24 xl:px-32 text-white">
-                    <span class="text-[#7dc35a] font-bold tracking-widest uppercase text-xs sm:text-sm md:text-base mb-4 drop-shadow-md">
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-center px-4 sm:px-12 md:px-16 lg:px-24 xl:px-32 text-white">
+                    <span class="text-[#7dc35a] font-bold tracking-widest uppercase text-xs sm:text-sm md:text-base mb-2 md:mb-4 drop-shadow-md mt-4">
                         Calidad & Resistencia
                     </span>
-                    <h2 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-extrabold mb-2 leading-tight drop-shadow-xl">
+                    <h2 class="text-3xl sm:text-4xl md:text-4xl lg:text-5xl font-extrabold mb-1 md:mb-2 leading-tight drop-shadow-xl">
                         Remolques
                     </h2>
-                    <p class="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-medium text-white/95 mb-6 drop-shadow-lg max-w-[95%] md:max-w-[70%] leading-tight">
+                    <p class="text-xl sm:text-2xl md:text-2xl lg:text-3xl font-medium text-white/95 mb-3 md:mb-6 drop-shadow-lg max-w-[95%] md:max-w-[70%] leading-tight">
                         {slide.title}
                     </p>
-                    <p class="text-sm sm:text-base md:text-lg text-gray-200 mb-8 max-w-[95%] sm:max-w-2xl leading-relaxed drop-shadow-md">
+                    <p class="text-sm sm:text-base md:text-lg text-gray-200 mb-5 md:mb-8 max-w-[95%] sm:max-w-2xl leading-relaxed drop-shadow-md">
                         {slide.description}
                     </p>
                     
